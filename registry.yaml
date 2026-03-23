@@ -2,3 +2,13 @@
 # Submit via: leap publish <experiment-name>
 # Or open an issue: https://github.com/leaplive/registry/issues/new
 
+- name: starterlab
+  type: lab
+  display_name: LEAP Starter Lab
+  description: Example experiments demonstrating LEAP2 features
+  author: Sampad Mohanty
+  repository: https://github.com/leaplive/starterlab
+  tags:
+  - leap
+  - example
+  - starter
