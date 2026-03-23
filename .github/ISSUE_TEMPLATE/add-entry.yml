@@ -1,0 +1,31 @@
+name: Add experiment or lab
+description: Submit an experiment or lab to the LEAP registry
+title: "Add: "
+labels: ["submission"]
+body:
+  - type: textarea
+    id: entry
+    attributes:
+      label: Registry entry
+      description: Paste the YAML entry for your experiment or lab.
+      placeholder: |
+        ```yaml
+        - name: my-experiment
+          type: experiment
+          display_name: My Experiment
+          description: What it does
+          author: your-github-username
+          repository: https://github.com/you/my-experiment
+          tags: [topic1, topic2]
+        ```
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: Repository is public
+          required: true
+        - label: Repository contains a valid LEAP experiment or lab (README.md with frontmatter)
+          required: true
